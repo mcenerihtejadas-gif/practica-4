@@ -1,0 +1,133 @@
+
+:root {
+    --purpura-oscuro: #512051;
+    --rosa-fuerte: #ee68a4;
+    --gris-purpura: #937b92;
+    --fondo-claro: #f7f2f7;
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--blanco);
+    color: var(--purpura-oscuro);
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.contenedor-principal {
+    max-width: 1110px;
+    width: 100%;
+}
+
+.seccion-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.bloque-texto {
+    max-width: 450px;
+}
+
+.bloque-texto h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.bloque-texto p {
+    color: var(--gris-purpura);
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.contenedor-estrellas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tarjeta-estrella {
+    background-color: var(--fondo-claro);
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 450px;
+}
+
+.estrellas {
+    color: #f1b746;
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+.tarjeta-estrella p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#estrella-2 { margin-left: 45px; }
+#estrella-3 { margin-left: 90px; }
+
+.seccion-testimonios {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tarjeta-usuario {
+    background-color: var(--purpura-oscuro);
+    color: var(--blanco);
+    padding: 40px;
+    border-radius: 10px;
+    height: 240px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.perfil img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.datos strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.datos span {
+    color: var(--rosa-fuerte);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.tarjeta-usuario p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+#testimonio-2 { margin-top: 20px; }
+#testimonio-3 { margin-top: 40px; }
+
+@media (max-width: 800px) {
+    .seccion-superior { text-align: center; justify-content: center; }
+    .tarjeta-estrella { width: 100%; margin: 0 !important; flex-direction: column; gap: 10px; }
+    .seccion-testimonios { flex-direction: column; }
+    #testimonio-2, #testimonio-3 { margin-top: 0; }
+}
